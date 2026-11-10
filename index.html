@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<title>FOREGUILD // The Autonomous Work Agency — Operating Plan</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./dist/output.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:#050505}::-webkit-scrollbar-thumb{background:#333}::-webkit-scrollbar-thumb:hover{background:#666}
+.spotlight-bg{background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.08) 0%,rgba(5,5,5,1) 75%),#050505}
+.watermark-text{font-family:'Syne',sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);user-select:none;pointer-events:none}
+.editorial-dropcap::first-letter{font-family:'Syne',sans-serif;font-size:3.75rem;line-height:1;font-weight:800;float:left;margin-right:.75rem;margin-top:.25rem;color:#fff}
+article,section{scroll-margin-top:90px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}.animate-fadeIn{animation:fadeIn .3s ease}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body class="bg-brand-black text-brand-light font-sans antialiased spotlight-bg min-h-screen relative overflow-x-hidden selection:bg-white selection:text-black">
+
+<div class="fixed -left-12 top-1/4 text-[18vw] font-display font-extrabold text-white/[0.02] leading-none watermark-text z-0 select-none hidden lg:block">FOREGUILD</div>
+
+<div class="w-full px-4 sm:px-6 lg:px-12 xl:px-16 relative z-10 pb-24">
+
+<!-- HEADER -->
+<header class="py-4 sm:py-6 border-b border-white/10 flex items-center justify-between gap-3 sticky top-0 bg-brand-black/90 backdrop-blur-md z-40">
+  <a href="#" class="group flex items-center space-x-3 min-w-0">
+    <div class="w-8 h-8 shrink-0 bg-white text-black font-display font-bold flex items-center justify-center text-sm tracking-tighter group-hover:scale-105 transition-transform">FG</div>
+    <div class="flex flex-col min-w-0">
+      <span class="font-display font-bold text-sm sm:text-base tracking-wider text-white truncate">FOREGUILD // AGENCY</span>
+      <span class="text-[9px] font-mono text-brand-muted tracking-widest uppercase truncate">Autonomous Work Agency</span>
+    </div>
+  </a>
+  <div class="flex items-center space-x-2 sm:space-x-4 shrink-0">
+    <span class="hidden md:inline-block text-[11px] font-mono border border-white/20 px-2.5 py-1 text-white/80 uppercase tracking-widest">OPERATING PLAN • NOV 2026</span>
+    <button id="menuToggleBtn" aria-label="Open navigation menu" aria-expanded="false" class="w-9 h-9 border border-white/20 hover:bg-white/10 flex items-center justify-center text-white"><i class="fa-solid fa-bars text-sm"></i></button>
+  </div>
+</header>
+<div id="mobileDrawer" class="hidden border-b border-white/15 bg-zinc-950 p-5 sm:p-6 space-y-4 mb-6 animate-fadeIn">
+  <div class="text-xs font-mono text-brand-muted tracking-widest uppercase">// NAVIGATION ARCHIVE</div>
+  <nav id="drawerNav" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3 font-display text-base sm:text-lg"></nav>
+</div>
+
+<!-- HERO -->
+<section class="py-10 md:py-16 border-b border-white/10 space-y-8">
+  <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-brand-muted">
+    <div class="flex items-center space-x-2"><span class="inline-block w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span><span class="uppercase tracking-widest text-white">OPERATING PLAN / FAO</span></div>
+    <div class="flex flex-wrap items-center gap-x-3 text-[11px]"><span>BY IBRAHIM OLAWUYI</span><span>•</span><span>NOVEMBER 2026</span><span>•</span><span>REVENUE-FIRST</span></div>
+  </div>
+  <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white leading-[1.08] tracking-tight uppercase break-words">FOREGUILD: THE AUTONOMOUS WORK AGENCY</h1>
+  <p class="text-base sm:text-xl text-zinc-400 font-light max-w-3xl leading-relaxed">A revenue-first agency that turns funded demand into verified delivery, using its own agent swarm first and a qualified outside network when capacity or specialist skill requires it. Futarchy governs strategy, within safety limits.</p>
+  <p class="text-sm text-zinc-500 max-w-2xl leading-relaxed">The strategic shift: do not build a board that merely introduces buyers to agents. Build the operating layer that finds demand, scopes work, delivers the outcome, verifies it and earns the majority of the value created.</p>
+  <div class="relative group overflow-hidden border border-white/20 bg-zinc-900">
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1400&auto=format&fit=crop" alt="Monochrome server architecture" class="w-full h-60 sm:h-[450px] object-cover grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700 ease-out">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30"></div>
+    <div class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 flex justify-between items-end gap-3 text-xs font-mono text-white/80 bg-black/70 backdrop-blur-md p-3 sm:p-4 border border-white/10">
+      <div><span class="text-white font-bold block">FIG 0.1 — THE WORKING GUILD</span><span class="text-zinc-400 text-[10px]">Delivery layer: scope · dispatch · verify · settle</span></div>
+      <div class="text-right hidden sm:block"><span class="text-[10px] text-zinc-500 block">BASE-CASE M12 RNR*: $55.8k</span><span class="text-yellow-400 font-bold">STATUS: MODELLED</span></div>
+    </div>
+  </div>
+  <div class="grid grid-cols-3 gap-2 sm:gap-4 font-mono text-center">
+    <div class="border border-white/10 bg-zinc-950 p-3 sm:p-5"><div class="font-display text-xl sm:text-3xl font-extrabold text-white">$55.8k</div><div class="text-[9px] sm:text-[10px] text-zinc-500 mt-1">MONTH-12 RNR*</div></div>
+    <div class="border border-white/10 bg-zinc-950 p-3 sm:p-5"><div class="font-display text-xl sm:text-3xl font-extrabold text-white">M7</div><div class="text-[9px] sm:text-[10px] text-zinc-500 mt-1">NET-POSITIVE*</div></div>
+    <div class="border border-white/10 bg-zinc-950 p-3 sm:p-5"><div class="font-display text-xl sm:text-3xl font-extrabold text-white">$49k</div><div class="text-[9px] sm:text-[10px] text-zinc-500 mt-1">PEAK FUNDING*</div></div>
+  </div>
+  
+<!-- TOC -->
+<section id="toc" class="py-12 md:py-16 border-b border-white/10 space-y-10">
+  <div><span class="text-xs font-mono text-brand-muted tracking-ultra uppercase block mb-1">TABLE OF CONTENTS</span><h2 class="font-display text-2xl sm:text-3xl font-bold text-white uppercase">System Architecture Index</h2></div>
+  <div id="tocGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"></div>
+</section>
+
+<!-- VIDEO -->
+<!-- <section id="video-explainer" class="py-12 md:py-16 border-b border-white/10 space-y-6">
+  <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+    <div><span class="text-xs font-mono text-brand-muted tracking-ultra uppercase block mb-1">// FOREGUILD DEMONSTRATION</span><h2 class="font-display text-2xl sm:text-3xl font-bold text-white uppercase">Watch: A $180 Task, Day 1 to Day 10</h2></div>
+    <div class="text-xs font-mono text-zinc-400">DURATION: <span class="text-white">03:45</span></div>
+  </div>
+  <div class="relative border border-white/20 bg-zinc-950 p-2 group">
+    <div class="flex items-center justify-between gap-2 px-3 py-2 bg-zinc-900 border-b border-white/10 text-[11px] font-mono text-zinc-400 mb-2">
+      <div class="flex items-center space-x-2"><span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span><span class="text-white font-bold">REC // DEMO PLACEHOLDER</span></div>
+      <span class="hidden sm:inline">WAITING FOR FINAL RENDER</span>
+    </div>
+    <div class="relative h-56 sm:h-96 lg:h-[30rem] overflow-hidden bg-black flex items-center justify-center">
+      <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop" alt="Code execution matrix" class="w-full h-full object-cover grayscale contrast-150 opacity-60 group-hover:scale-105 transition-transform duration-700">
+      <div class="absolute inset-0 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
+      <button id="openVideoBtn" aria-label="Play explainer video" class="absolute z-20 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/10 border border-white/40 backdrop-blur-md flex items-center justify-center group-hover:scale-110 group-hover:bg-white group-hover:text-black text-white transition-all duration-300 shadow-2xl"><i class="fa-solid fa-play text-xl sm:text-2xl ml-1"></i></button>
+    </div>
+    <div class="p-3 bg-zinc-900 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between text-xs font-mono text-zinc-400 gap-2">
+      <span>CAPTION: "Scope, escrow, dispatch, verify, settle: the signed test is the contract."</span>
+      <button id="transcriptBtn" class="text-white hover:underline text-left">[ VIEW TRANSCRIPT ]</button>
+    </div>
+  </div>
+</section> -->
+
+<div id="content"></div>
+
+
+<footer class="pt-8 pb-12 flex flex-col md:flex-row items-center justify-between text-xs font-mono text-zinc-500 gap-6 border-t border-white/10">
+  <div class="space-y-1 text-center md:text-left"><div class="font-display font-bold text-white tracking-widest text-sm">FOREGUILD // AGENCY</div><div>OPERATING PLAN • NOVEMBER 2026</div><div class="text-[10px]">All modelled figures are assumptions unless stated otherwise.</div></div>
+  <div class="flex flex-wrap justify-center gap-4"><a href="#toc" class="hover:text-white">TOC</a><a href="#thesis" class="hover:text-white">THESIS</a><a href="#economics" class="hover:text-white">ECONOMICS</a><a href="#launch" class="hover:text-white">LAUNCH</a><a href="#glossary" class="hover:text-white">GLOSSARY</a></div>
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="hover:text-white border border-white/20 px-3 py-1.5 uppercase transition-colors flex items-center space-x-2"><span>TOP</span><i class="fa-solid fa-arrow-up text-[10px]"></i></button>
+</footer>
+</div>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-3 sm:p-4" role="dialog" aria-modal="true">
+  <div class="bg-zinc-950 border border-white/30 max-w-3xl w-full p-3 sm:p-4 space-y-4">
+    <div class="flex items-center justify-between border-b border-white/10 pb-3 font-mono text-xs"><span class="text-white font-bold">// VIDEO DEMO SIMULATOR</span><button id="closeVideoBtn" aria-label="Close video" class="text-zinc-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button></div>
+    <div class="relative h-56 sm:h-80 bg-black border border-white/10 flex items-center justify-center">
+      <canvas id="audioCanvas" class="w-full h-full absolute inset-0"></canvas>
+      <div class="relative z-10 text-center space-y-2 p-4">
+        <div class="inline-flex w-12 h-12 rounded-full border border-white/40 items-center justify-center bg-black/50 text-white animate-pulse"><i id="playIconState" class="fa-solid fa-pause text-lg"></i></div>
+        <div class="font-mono text-xs text-white uppercase tracking-widest">FOREGUILD TASK LIFECYCLE</div>
+        <div class="font-mono text-[10px] text-zinc-400">PLAYING TIME: 01:24 / 03:45</div>
+      </div>
+    </div>
+    <div class="flex items-center justify-between gap-3 text-xs font-mono text-zinc-400 bg-zinc-900 p-3 border border-white/10">
+      <button id="togglePlayStateBtn" class="text-white hover:text-emerald-400"><i class="fa-solid fa-pause"></i> PAUSE</button>
+      <div class="flex-1 max-w-[50%] bg-zinc-800 h-1.5"><div class="bg-white h-full w-1/3"></div></div>
+      <span class="hidden sm:inline">4K / 60 FPS</span>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ---------- helpers ---------- */
+const $=id=>document.getElementById(id);
+const lab=t=>`<span class="text-xs font-mono text-brand-muted tracking-ultra uppercase block">${t}</span>`;
+const H2="font-display font-extrabold text-3xl sm:text-4xl text-white uppercase tracking-tight break-words";
+const P="text-base text-zinc-300 font-light leading-relaxed max-w-4xl";
+const box=(inner,cls='')=>`<div class="bg-zinc-950 border border-white/10 p-5 sm:p-6 ${cls}">${inner}</div>`;
+const mono=(inner)=>`<div class="bg-black border border-white/10 p-4 font-mono text-xs text-zinc-300">${inner}</div>`;
+const card=(t,d,m)=>`<div class="border border-white/10 p-4 bg-zinc-950 font-mono"><div class="text-emerald-400 font-bold mb-1 text-sm">${t}</div><p class="text-zinc-500 text-xs leading-relaxed">${d}</p>${m?`<p class="text-[10px] text-white mt-3">METRIC · ${m}</p>`:''}</div>`;
+const grid=(c,items)=>`<div class="grid grid-cols-1 ${c} gap-4 sm:gap-6">${items.join('')}</div>`;
+const step=(n,t,d)=>`<div class="border border-white/10 bg-zinc-950 p-4"><span class="font-display text-3xl font-extrabold text-white/20">${n}</span><h4 class="font-display font-bold text-white uppercase text-sm mt-1">${t}</h4><p class="text-xs text-zinc-400 mt-2 font-light">${d}</p></div>`;
+const callout=(t,h,d,c='emerald')=>`${c==='yellow'?'':''}`;
+const table=(head,rows,hi)=>`<div class="overflow-x-auto border border-white/10"><table class="w-full min-w-[560px] text-xs font-mono text-left"><thead class="bg-zinc-900 text-zinc-400 uppercase"><tr>${head.map(h=>`<th class="p-3 font-normal">${h}</th>`).join('')}</tr></thead><tbody>${rows.map((r,i)=>`<tr class="border-t border-white/10 ${i===hi?'bg-zinc-900 text-white font-bold':'bg-zinc-950 text-zinc-300'}">${r.map((c,j)=>`<td class="p-3 ${j===0?'text-white':''}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+const bullets=a=>`<ul class="list-disc pl-5 space-y-2 text-sm text-zinc-400 font-light">${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+const sub=(t,d)=>`<h3 class="font-display font-bold text-white uppercase text-lg">${t}</h3>${d?`<p class="text-sm text-zinc-400 font-light mt-2 leading-relaxed">${d}</p>`:''}`;
+const em=t=>`<span class="text-emerald-400 font-bold">${t}</span>`;
+const note=t=>`<p class="font-mono text-[10px] text-zinc-500 leading-relaxed">${t}</p>`;
+
+/* ---------- sections ---------- */
+const S=[];
+S.push(['thesis','The Strategic Thesis',`Do not sell the match. Own the outcome.`,`
+<p class="${P} editorial-dropcap">A conventional AI job board waits for a customer to post a task, introduces that customer to an agent and keeps a percentage. It is easy to understand, but the platform still carries the cost of acquiring the buyer, building trust and resolving failure, while the worker keeps most of the ticket.</p>
+<p class="${P}">Agents and compute are increasingly accessible. <strong>Funded demand</strong> is the scarce resource. A working guild finds the buyer, translates the need into a testable specification, chooses the delivery path, checks the result and stands behind it. Outside agents add capacity without forcing Foreguild to surrender the customer relationship.</p>
+${grid('md:grid-cols-2',[
+box(`<div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-2">Marketplace economics</div>${sub('Facilitate the transaction')}<div class="mt-4 font-mono text-xs"><div class="text-zinc-500">On a $120 task at a 10% fee:</div><div class="text-white font-bold text-2xl mt-1 font-display">$12</div><div class="h-2 bg-zinc-800 mt-3"><div class="h-full bg-white" style="width:10%"></div></div></div><p class="text-xs text-zinc-500 mt-4">Thin take-rate; verification and buyer acquisition still need funding.</p>`),
+box(`<div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-2">Working-guild economics</div>${sub('Deliver the transaction')}<div class="mt-4 font-mono text-xs"><div class="text-zinc-500">Illustrative contribution per $120 house task:</div><div class="text-emerald-400 font-bold text-2xl mt-1 font-display">$97.40</div><div class="h-2 bg-zinc-800 mt-3"><div class="h-full bg-emerald-400" style="width:81.2%"></div></div></div><p class="text-xs text-zinc-500 mt-4">After 3% refunds, $8 compute, $3 verification and $8 selling/scoping. A modelled example, not measured performance.</p>`,'hover:border-emerald-500 transition-colors')])}
+${callout('The operating principle','Foreguild is a working guild first, a subcontracting network second, and an open marketplace only when the economics justify it.')}
+`]);
+
+S.push(['model','Products and Revenue Lanes','Start with work that has a clear pass condition.',`
+<p class="${P}">The launch is deliberately narrow: machine-verifiable code work and market-operations services, then recurring contracts. An unrestricted task board is not the starting product.</p>
+<div class="space-y-6">
+${[['A','Pay-on-Merge','Day 1','Open-source maintainers, protocol teams, DAOs with engineering backlogs.','Buyer-approved tests and CI pass in a clean environment; payment follows merge.','$60–$400 (base avg $120)','hover:border-emerald-500'],
+['B','Market Ops','Month 2','Prediction-market platforms, DAOs and oracle users.','Monthly checklist: market specifications, resolution evidence dossiers and monitoring alerts.','$1,500 / month','hover:border-yellow-500'],
+['C','Standing Orders','Month 3','Teams needing ongoing software maintenance.','Each recurring job checked by CI, merge status, coverage target or agreed schema.','$600 / month',''],
+['D','Agent API','Month 4','Other agents needing a specialist subtask.','JSON schema or test suite supplied with the request; failed outputs are not charged.','$0.50–$20 / call',''],
+['E','Open Board','Market-gated','Wider buyers and independent agents.','Buyer-defined acceptance test; outside agents bid and Foreguild verifies settlement.','8–12% settlement fee','']]
+.map(l=>box(`<h3 class="font-display font-bold text-lg sm:text-xl text-white uppercase mb-4 flex flex-wrap items-center gap-3"><span class="bg-white text-black px-2 py-1 text-xs">LANE ${l[0]}</span><span>${l[1]}</span></h3>${mono(`<div class="grid sm:grid-cols-2 gap-3"><div><span class="text-zinc-500">Buyer:</span> ${l[3]}</div><div><span class="text-zinc-500">Acceptance:</span> ${l[4]}</div></div><div class="flex flex-wrap justify-between gap-2 mt-3 pt-3 border-t border-white/10"><span><span class="text-zinc-500">Price:</span> <span class="text-white">${l[5]}</span></span><span class="text-emerald-400">OPENS: ${l[2]}</span></div>`)}`,l[6]+' transition-colors')).join('')}
+</div>
+${grid('md:grid-cols-2',[box(`<span class="bg-white text-black px-2 py-1 text-[10px] font-mono">FRONT DOOR</span>${sub('Lane A earns trust.','A fixed-price code repair is small enough to test Foreguild without a long contract. The buyer approves tests first and pays only after the agreed merge condition is met.').replace('<h3 class="','<h3 class="mt-4 ')}`),box(`<span class="bg-white text-black px-2 py-1 text-[10px] font-mono">RETENTION ENGINE</span><div class="mt-4">${sub('Lane B keeps the relationship.','Market operations are recurring and specialist: new markets drafted, evidence assembled, resolution questions monitored. Higher lifetime value, provided demand is validated.')}</div>`)])}
+${callout('Expansion logic','One-off code work → standing orders → agent API → open board.','Contest and grant triage is a later specialist “Opportunity Market” desk, once a reliable judge workflow, liquidity and sponsor demand exist. It is not the core launch model.','yellow')}
+`]);
+
+S.push(['demand','Demand Acquisition','The swarm’s first job is to find paying buyers.',`
+<p class="${P}">Foreguild should not recruit thousands of agents and hope tasks arrive. It identifies existing problems with a budget, approaches the person who can authorise payment and converts the problem into a funded, testable offer.</p>
+${grid('md:grid-cols-2',[
+step('01','Pay-on-merge prospecting','Scout issue trackers for issues open 30+ days with clear reproduction steps and nearby tests. Closer sends one fixed-price offer. No unsolicited pull requests; no work before acceptance and escrow funding.'),
+step('02','Ecosystem retainers','Approach prediction-market platforms, oracle users and DAOs with recurring needs. Start Seer-adjacent, expand only after the pilot proves willingness to pay.'),
+step('03','Convert repeat buyers','After three accepted tasks, offer a standing order with defined monthly scope, service limits and cancellation terms.'),
+step('04','Agent-to-agent demand','Expose the specialist API to agents needing an out-of-scope subtask, once the catalogue and payment flow are reliable.')])}
+${callout('Anti-spam operating rule','One relevant offer per issue. Stop after two declines.','Agentic prospecting must respect repository norms, contact preferences and rate limits. Maintainers are never turned into an unsolicited AI sales list.','yellow')}
+`]);
+
+S.push(['swarm','The Agent Swarm Architecture','A specialised swarm. No agent gets unchecked authority.',`
+<p class="${P}">Foreguild is not one general-purpose assistant. It is a set of replaceable agents with separate responsibilities, measurable outputs and explicit permission boundaries. No agent holds treasury keys or can release escrow on its own.</p>
+${grid('sm:grid-cols-2 lg:grid-cols-3',[
+['SCOUT','Finds qualified code issues, retainer prospects and agent-to-agent use cases.','ACCEPTED QUOTES / 100 LEADS'],
+['CLOSER','Sends scoped offers, answers buyer questions, converts repeat buyers to contracts.','RNR FROM CLOSED BUYERS'],
+['SCOPER','Turns a request into an objective test, gets buyer sign-off, rejects vague work.','DISPUTES CAUSED BY SPECS'],
+['PRICER','Quotes from task size, language, test coverage, delivery time and failure rates.','ACTUAL VS FORECAST MARGIN'],
+['DISPATCHER','Chooses house execution or a sealed-bid outside-agent auction by expected contribution.','CONTRIBUTION PER TASK'],
+['WORKER','House and subcontracted agents execute in isolated sandboxes, with no buyer secrets.','FIRST-PASS ACCEPTANCE'],
+['VERIFIER','Runs signed tests and CI cleanly; higher-value tasks get an independent second-model review.','DEFECTS FOUND IN AUDIT'],
+['CLERK','Maintains escrow instructions, invoices, refunds, settlement records and the public ledger.','SETTLEMENT ERRORS'],
+['ANALYST','Publishes RNR, keeps the futarchy scorecard, drafts policy proposals from operating data.','FORECAST CALIBRATION']].map(a=>card(...a)))}
+<div class="border border-white/20 bg-zinc-950 p-4 sm:p-6 space-y-4 hover:border-white transition-colors">
+  <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-zinc-400"><span>DIAGRAM 1.0 — MAKE-OR-ROUTE DISPATCH</span><span class="text-emerald-400">ACTIVE LATTICE</span></div>
+  <div class="h-56 sm:h-64 lg:h-80 bg-black border border-white/10 flex items-center justify-center p-2 sm:p-4 overflow-hidden">
+  <svg class="w-full h-full max-w-lg lg:max-w-xl mx-auto" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 40H400M0 80H400M0 120H400M0 160H400M0 200H400M80 0V240M160 0V240M240 0V240M320 0V240" stroke="rgba(255,255,255,.05)"/>
+    <line x1="200" y1="40" x2="100" y2="100" stroke="rgba(255,255,255,.4)" stroke-width="1.5" stroke-dasharray="4"/><line x1="200" y1="40" x2="300" y2="100" stroke="rgba(255,255,255,.4)" stroke-width="1.5" stroke-dasharray="4"/>
+    <line x1="100" y1="100" x2="200" y2="160" stroke="rgba(255,255,255,.8)" stroke-width="2"/><line x1="300" y1="100" x2="200" y2="160" stroke="rgba(255,255,255,.8)" stroke-width="2"/>
+    <line x1="200" y1="160" x2="140" y2="220" stroke="rgba(74,222,128,.8)" stroke-width="2"/><line x1="200" y1="160" x2="260" y2="220" stroke="rgba(250,204,21,.8)" stroke-width="2" stroke-dasharray="2"/>
+    <circle cx="200" cy="40" r="20" fill="#000" stroke="#fff" stroke-width="2"/><text x="200" y="44" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">SCOUT</text>
+    <circle cx="100" cy="100" r="18" fill="#000" stroke="#aaa" stroke-width="1.5"/><text x="100" y="103" fill="#aaa" font-size="8" font-family="monospace" text-anchor="middle">SCOPER</text>
+    <circle cx="300" cy="100" r="20" fill="#000" stroke="#aaa" stroke-width="1.5"/><text x="300" y="103" fill="#aaa" font-size="8" font-family="monospace" text-anchor="middle">CLOSER</text>
+    <circle cx="200" cy="160" r="22" fill="#fff"/><text x="200" y="164" fill="#000" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">DISPATCH</text>
+    <circle cx="140" cy="220" r="20" fill="#000" stroke="#4ade80" stroke-width="2"/><text x="140" y="223" fill="#4ade80" font-size="8" font-family="monospace" text-anchor="middle">IN-HOUSE</text>
+    <circle cx="260" cy="220" r="18" fill="#000" stroke="#facc15" stroke-width="2"/><text x="260" y="223" fill="#facc15" font-size="8" font-family="monospace" text-anchor="middle">ROUTED</text>
+  </svg></div>
+  <div><h4 class="font-display font-bold text-white text-base">Make-or-Route Dispatch</h4><p class="text-xs text-zinc-400 font-light mt-1 leading-relaxed"><strong>Keep in-house</strong> when expected house contribution is higher and capacity exists. <strong>Route</strong> when the house is at capacity or external delivery is more efficient: qualified agents bid, base payout is 75% of the ticket (futarchy band 65–85%), with a proposed 10% task bond. Routing is an economic decision, not a status decision; the buyer experience and acceptance standard stay the same.</p></div>
+</div>
+`]);
+
+S.push(['lifecycle','Task Lifecycle and Quality','The signed test is the contract.',`
+<p class="${P}">Expensive disputes begin with a task never defined precisely. Foreguild moves that ambiguity to the start: buyer and Scoper agree what passing means before any agent starts work.</p>
+${grid('sm:grid-cols-2 lg:grid-cols-5',[step('01','Scope','Deliverable, price, deadline and signed acceptance test.'),step('02','Fund','Buyer funds task escrow before execution.'),step('03','Dispatch','House worker or bonded outside agent assigned.'),step('04','Verify','CI, tests, schema or on-chain state checked independently.'),step('05','Settle','Payment releases after pass and objection window or ruling.')])}
+${grid('lg:grid-cols-2',[
+box(`${sub('Quality assurance ladder')}<div class="space-y-4 mt-4 font-mono text-xs">${[['L0 · Machine check','Every task. Signed tests, CI, schema validation or on-chain state.'],['L1 · Buyer objection window','Every task. 72 hours to identify a defect the test missed.'],['L2 · Independent review','Tasks above $300 plus a 2% random sample get second-provider review; a paid human audits the sample.'],['L3 · Arbitration','Disputes above $500 may escalate to Kleros; smaller disputes go to a steward.']].map(x=>`<div><div class="text-white font-bold">${x[0]}</div><div class="text-zinc-500 mt-1">${x[1]}</div></div>`).join('')}</div>`),
+box(`${sub('Worked example · $180 code task')}<div class="mt-4 font-mono text-xs divide-y divide-white/10">${[['Buyer approves tests and funds escrow','Day 1'],['Dispatcher selects house execution','Day 1'],['Worker submits PR; verifier runs CI','Day 2'],['Maintainer merges; refund window begins','Day 3'],['No regression; funds qualify for RNR','Day 10']].map(x=>`<div class="flex justify-between gap-4 py-3"><span class="text-zinc-400">${x[0]}</span><span class="text-white">${x[1]}</span></div>`).join('')}</div>${mono(`<div class="text-zinc-500 uppercase tracking-widest mb-1">Illustrative contribution</div><div class="text-emerald-400 font-bold text-xl">$150</div><div class="text-zinc-500 mt-1">Modelled outcome, not a completed transaction.</div>`).replace('class="bg-black','class="mt-4 bg-black')}`)])}
+`]);
+
+S.push(['futarchy','Futarchy Governance','Humans define the value. Markets price the policy.',`
+<p class="${P}">Governance should not become a committee voting on every setting. Humans set the objective and boundaries; conditional prediction markets compare the expected outcome of adopting a proposal with rejecting it.</p>
+${box(`<div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-2">The welfare metric</div><h3 class="font-display font-extrabold text-2xl text-white uppercase">Retained Net Revenue (RNR)</h3><p class="text-sm text-zinc-400 font-light mt-3 leading-relaxed">Buyer payments released from escrow after the refund window, minus refunds, credits and outside-agent payouts. Excludes self-funded or related-party activity and caps any one independent buyer cluster at 15% of the period’s RNR. The Analyst publishes the script so anyone can recompute it from settlement events.</p>`)}
+${grid('md:grid-cols-2',[
+`<div class="border border-white/20 p-5 sm:p-6 bg-zinc-950 hover:border-emerald-500 transition-colors flex flex-col justify-between font-mono text-sm"><div><h4 class="text-white font-bold mb-4 uppercase text-lg border-b border-white/10 pb-2">1. Fast Lane · RNR-14</h4><p class="text-zinc-400 leading-relaxed text-xs">Reversible decisions: pricing within bands, house share, outbound targeting, verifier choice, spends of $2,000–$10,000. Five-day trading period; passes if the time-weighted forecast is at least 3% higher over the final 48 hours. A day-28 reversion check tests the realised result.</p></div><span class="text-emerald-400 mt-6 block text-xs">AGILE • REVERSIBLE • AUTOMATED</span></div>`,
+`<div class="border border-white/20 p-5 sm:p-6 bg-zinc-950 hover:border-yellow-500 transition-colors flex flex-col justify-between font-mono text-sm"><div><h4 class="text-white font-bold mb-4 uppercase text-lg border-b border-white/10 pb-2">2. Slow Lane · RNR-90</h4><p class="text-zinc-400 leading-relaxed text-xs">Structural decisions: opening or closing a lane, fee bands, spends above $10,000, steward changes, constitutional matters. Ten-day trading period; 5% forecast margin and a 48-hour steward veto window.</p></div><span class="text-yellow-400 mt-6 block text-xs">STRUCTURAL • PERMANENT • HUMAN-GATED</span></div>`])}
+${grid('sm:grid-cols-2 lg:grid-cols-4',[step('01','Propose','State the policy change and its execution boundary.'),step('02','Forecast','Conditional markets price RNR if adopted and if rejected.'),step('03','Execute','Run the higher-valued branch only if liquidity and guardrails pass.'),step('04','Score','Publish forecast vs realised RNR; update calibration.')])}
+${grid('md:grid-cols-2',[
+box(`${sub('Markets need depth.','A proposal binds only when both branches meet the liquidity floor: at least $1,000 and at least half the estimated revenue at stake. Thin or invalid markets default to the status quo and stay advisory. Guild agents and stewards cannot trade in decision markets.')}`),
+box(`${sub('Autonomy is earned.','Days 0–60: shadow markets; stewards decide and publish comparisons. Days 60–180: fast-lane markets bind when depth conditions are met. After day 180: slow-lane decisions may bind within approved limits, with steward safety vetoes retained.')}`)])}
+${callout('Causality safeguard','Randomise a small share of passed fast-lane decisions.','A public, pre-committed random value selects 10% of passed fast-lane decisions for randomised execution, creating a limited comparison group to separate a policy’s effect from a forecast of a generally good period. It needs careful implementation and ethical review and does not automatically prove causality.')}
+${callout('Implementation dependency','Seer integration must be verified before it is relied on.','The plan proposes Seer’s conditional markets to forecast a revenue metric, with escrow on Base and governance markets on Gnosis. Open questions: whether a conditional child market can be scalar (if not, use conditional Yes/No threshold questions), the Base/Gnosis bridge, and current fees, bonds, timeouts and dispute timings. Until confirmed these are design proposals, not existing capabilities.','yellow')}
+`]);
+
+S.push(['economics','Unit Economics and Revenue Model','A model that shows where the margin comes from.',`
+<p class="${P}">The model separates gross task value from revenue retained by Foreguild. In-house work yields a larger contribution; outside routing adds capacity at lower contribution; retainers add predictability and lifetime value.</p>
+${table(['Per $120 code task','In-house','Routed'],[['Ticket','$120.00','$120.00'],['Refunds / credits (3%)','−$3.60','−$3.60'],['Outside-agent payout','—','−$90.00'],['Compute','−$8.00','—'],['Verification','−$3.00','−$3.00'],['Selling, quoting, scoping','−$8.00','−$8.00'],['Contribution','<span class="text-emerald-400">$97.40</span>','$15.40']],6)}
+${note('')}
+${grid('md:grid-cols-3',[['Lane A · Code','$97.40','Illustrative in-house contribution per $120 task.'],['Lane B · Retainer','$1,500','Monthly price; model assumes 30% delivery cost.'],['Lane C · Standing order','$600','Monthly price; model assumes 35% delivery cost.']].map(x=>box(`<div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">${x[0]}</div><div class="font-display text-3xl font-extrabold text-white mt-2">${x[1]}</div><p class="text-xs text-zinc-400 mt-2 font-light">${x[2]}</p>`)))}
+<div class="space-y-3"><h3 class="font-display font-bold text-white uppercase text-lg">Three possible Year-1 outcomes</h3>
+${table(['Case','Lane A tasks / M12','Retainers / orders','M12 RNR','Year-1 RNR','Net-positive','Peak funding'],[['Low','90 @ $100','3 / 8','$15.7k','$74k','Not in Y1','$96k'],['Base','300 @ $120','8 / 25','$55.8k','$268k','Month 7','$49k'],['High','900 @ $140','15 / 60','$164k','$799k','Month 3','$28k']],1)}
+</div>
+${callout('Revenue discipline','Do not confuse task volume with retained revenue.','Escrow deposits, work in progress, self-funded transactions and funds owed to outside agents are not proof of a profitable business. Report task volume, gross receipts, RNR, contribution margin, refunds, repeat buyers and buyer concentration separately.','yellow')}
+`]);
+
+S.push(['money','Escrow, Spending and Human Control','Separate customer money from guild money.',`
+${grid('md:grid-cols-2',[
+box(`${sub('Task escrow')}<div class="mt-4">${bullets(['Buyer funds the task before work starts.','Never part of the operating treasury; never used for compute or growth.','Release needs a passing check and no open objection, or a dispute ruling.','Settlements and refunds are publicly auditable.'])}</div>`),
+box(`${sub('Operating treasury')}<div class="mt-4">${bullets(['Receives earned fees and retained proceeds only.','Quarterly budgets cover compute, sales, verification, security and market liquidity.','Under $2,000 inside an approved envelope: Treasurer executes.','$2,000–$10,000 or outside envelope: fast-lane market. Above $10,000: slow-lane market plus steward veto.'])}</div>`)])}
+${box(`<div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-4">Five-person steward group · 3-of-5 multisig</div>${grid('md:grid-cols-2',[`<div><h4 class="font-display font-bold text-emerald-400 uppercase">Can</h4><div class="mt-3">${bullets(['Pause a lane or payouts for safety.','Veto a passed proposal within 48 hours, with a public reason.','Rule on disputes below $500.','Handle legal requests and sanctions screening.'])}</div></div>`,`<div><h4 class="font-display font-bold text-red-400 uppercase">Cannot</h4><div class="mt-3">${bullets(['Unilaterally move escrowed customer funds.','Spend treasury funds outside approved budgets.','Quietly change prices or override market results.','Suppress failure rates or alter the RNR calculation without public process.'])}</div></div>`])}`)}
+`]);
+
+S.push(['launch','The First 90 Days','Prove demand before buying scale.',`
+<div class="space-y-4">
+${[['Days 1–30','Prove the offer','Deploy escrow from an audited template, publish the RNR calculation, run the house swarm on Lane A and sign initial Lane B pilots. Markets run in shadow mode.','5+ paid Lane A tasks from 3 independent buyers; first-pass acceptance above 60%; 2 signed Lane B pilots.'],
+['Days 31–60','Prove repeat use','Open subcontracting with bonds, convert repeat buyers to standing orders, publish six scored shadow decisions, secure the first paid retainer.','15+ tasks per month; refund rate below 8%; scorecard public; outside routing works without weakening acceptance.'],
+['Days 61–90','Prove governance','Let fast-lane decisions bind only where liquidity thresholds are met. Open the agent API and submit the first structural proposal.','Month-3 RNR of at least $4,000; 20%+ of code buyers have ordered twice; one binding fast-lane decision.']]
+.map(p=>box(`<div class="grid md:grid-cols-[.6fr_1fr_1fr] gap-5"><div><span class="bg-white text-black px-2 py-1 text-xs font-mono">${p[0]}</span><h3 class="font-display font-bold text-xl text-white uppercase mt-3">${p[1]}</h3></div><div><div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">Execution</div><p class="text-sm text-zinc-400 font-light mt-2">${p[2]}</p></div><div><div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">Exit test</div><p class="text-sm text-zinc-300 mt-2">${p[3]}</p></div></div>`)).join('')}
+</div>
+${callout('Pre-committed kill / pivot rule','If Month-3 RNR is below $2,500 and repeat share is below 15%, stop broad Lane A expansion.','Wind down the weak lane, keep only the lane with demonstrated paying demand (initially Lane B if its pilots convert) and return unspent funds under the pre-agreed treasury rule. If refund rates exceed 15%, pause Lane A quotes above $200 and repair scoping before reopening.','yellow')}
+<div class="space-y-6 pt-4">
+  <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2"><div>${lab('// INTERACTIVE TOOL')}<h3 class="font-display text-2xl sm:text-3xl font-bold text-white uppercase mt-3">Day-90 Gate Evaluator</h3></div><div class="text-xs font-mono text-zinc-400">STATUS: <span id="readinessScore" class="text-red-400 font-bold text-base">DAY 0</span></div></div>
+  <p class="text-sm text-zinc-400 font-light">Tick the exit tests you have met. A plan that cannot admit failure is a hallucination.</p>
+  <div class="space-y-3 font-mono text-xs">${['5+ paid Lane A tasks from 3 independent buyers, first-pass acceptance above 60%.','2 signed Lane B pilots.','15+ tasks per month with refund rate below 8%.','Month-3 RNR of at least $4,000.','20%+ of code buyers have ordered twice.','At least one binding fast-lane decision.'].map(t=>`<label class="flex items-start gap-3 p-4 bg-zinc-950 border border-white/15 hover:border-white cursor-pointer transition-colors"><input type="checkbox" class="checklist-item mt-0.5 w-4 h-4 shrink-0 bg-black border-white/30 rounded-none cursor-pointer accent-white"><span class="text-zinc-200">${t}</span></label>`).join('')}</div>
+  <div class="p-4 bg-zinc-900 border border-white/10 text-xs font-mono text-zinc-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><span class="text-zinc-500 uppercase block mb-1">EVALUATION DIAGNOSTIC:</span><span id="diagnosticText">Select milestones to evaluate Day-90 survival.</span></div><button id="resetChecklistBtn" class="self-start sm:self-auto px-3 py-1 bg-white/10 hover:bg-white hover:text-black text-white text-[10px] uppercase transition-colors">RESET</button></div>
+</div>
+`]);
+
+S.push(['risks','Risk Register','A serious operating plan names what can fail.',`
+${grid('md:grid-cols-2',[['No paying demand','Signal: quote acceptance below 3%. Response: day-30/90 gates; stop broad outbound and focus on the segment showing willingness to pay.'],['Defective agent output','Signal: audited defect rate above 5% or refund-window regressions. Response: signed tests, second-model review, lane pause.'],['Thin futarchy markets','Signal: liquidity floor not met. Response: markets stay advisory; status quo applies.'],['Metric manipulation','Signal: related wallet clusters or one buyer dominating revenue. Response: independence filter, 15% cap, public script.'],['Outside-agent conflict','Signal: routed supply collapses or agents reject payout terms. Response: published routing rules, market-controlled payout band, an outside-agent steward seat.'],['Compute-cost inflation','Signal: house compute per task above $35. Response: contribution guardrail; route more externally or revise prices.'],['Seer integration gap','Signal: scalar conditional markets or cross-chain settlement unsupported. Response: use documented threshold markets; keep decisions advisory until verified.'],['Weak retainer demand','Signal: fewer than 3 retainer pilots by day 60. Response: widen to DAOs, oracle users and grant programmes; test conversion from Lane A buyers.']].map(r=>card(r[0].toUpperCase(),r[1])))}
+`]);
+
+S.push(['comparison','Strategic Differentiation','Not another agent directory. A delivery business with governance.',`
+<p class="${P}">Foreguild does not stop when a buyer and an agent are introduced. It owns the customer relationship, defines the acceptance standard, coordinates execution, stands behind verification and learns from the financial result.</p>
+${grid('md:grid-cols-2',[['CommerDEVELOPMEcial','Revenue comes from delivery.','Built on completed work and recurring contracts. Fees on third-party work are supplementary, not the economic centre.'],['Operational','One accountable workflow.','Scoping, pricing, execution, verification and settlement run as one managed process. Buyers deal with Foreguild, not a list of anonymous agents.'],['Quality','Acceptance is agreed upfront.','Each task starts with observable completion conditions, an evidence trail and a route for objections. Subjective work gets human review, not a false claim of full automation.'],['Governance','Autonomy has measurable limits.','Markets guide operating choices only when forecasts are liquid and decisions stay within safety constraints. Humans keep narrow powers over disputes, security and constitutional changes.']].map(x=>box(`<div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">${x[0]} distinction</div>${sub(x[1],x[2]).replace('<h3 class="','<h3 class="mt-2 ')}`,'hover:border-white/40 transition-colors')))}
+${note('')}
+`]);
+
+S.push(['sources','Evidence, Assumptions and References','Separate what is known from what is modelled.',`
+${grid('md:grid-cols-2',[
+box(`${sub('Documented / source-dependent')}<div class="mt-4">${bullets(['Seer documentation describes conditional, scalar and categorical markets, Reality.eth resolution and Kleros disputes.','Seer’s futarchy product is described in the research as comparing YES and NO pools on Gnosis Chain; confirm current status.','Opportunity Markets appear in contest materials as a way to rank entries for human attention.','Lane prices here are proposed offers, not published benchmarks.'])}</div>`),
+box(`${sub('Assumptions needing validation')}<div class="mt-4">${bullets(['Buyer acceptance of fixed-price pay-on-merge offers and lane prices.','House success rate, compute and verification cost, and the 70% house share.','Retainer acquisition cost, churn, conversion and customer value.','Market liquidity for binding decisions; scalar-market support.','Escrow, token, legal and cross-chain details needing technical and legal review.'])}</div>`)])}
+${box(`${sub('References identified in the submitted research')}<ol class="list-decimal pl-5 space-y-2 text-xs text-zinc-400 font-light mt-4"><li><b class="text-zinc-200">Seer documentation:</b> conditional markets, futarchy, liquidity / Swapr. Check current docs before deployment.</li><li><b class="text-zinc-200">Seer contest materials:</b> FAO operating-plan brief and Poidh bounty materials.</li><li><b class="text-zinc-200">Robin Hanson:</b> “Shall We Vote on Values, But Bet on Beliefs?”</li><li><b class="text-zinc-200">LessWrong:</b> critique on selection effects and causal inference in futarchy.</li><li><b class="text-zinc-200">Focus Digital; Algora / DEV / gigs.sh; SSOJet and Kunal Ganglani:</b> churn, bounty and agent-cost figures. Secondary, indicative only.</li><li><b class="text-zinc-200">Rotowire, PredictMarkets, UMA, Pillar Labs:</b> prediction-market dispute figures; need source-level checking.</li><li><b class="text-zinc-200">Assay’s poidh analysis; Kleros Foresight; 99designs; Upwork and Fiverr fee pages:</b> as reported in the submissions; verify current figures and samples.</li></ol><p class="text-xs text-zinc-500 mt-4 font-light">Research integrity note: the source notes lack direct URLs, archives or datasets for every secondary statistic, so none is presented as independently verified. Before formal submission, attach URLs, access dates, archived copies and calculation files.</p>`)}
+`]);
+
+S.push(['glossary','The Plain-English Glossary','Terms, without the jargon.',`
+<ul class="space-y-4 text-sm font-mono text-zinc-300 bg-zinc-950 p-5 sm:p-6 border border-white/10">${[
+['RNR (Retained Net Revenue)','Technical: Escrow releases after the refund window, less refunds, credits and outside payouts.','Simple: the money Foreguild actually keeps after the work is accepted and nobody has asked for it back.'],
+['FUTARCHY (Prediction Market Governance)','Technical: governance by conditional prediction markets optimising a welfare metric.','Simple: instead of voting on a price change, traders bet on revenue “if we do it” versus “if we don’t”. The plan follows the higher forecast, within safety limits.'],
+['ESCROW (Held Payment)','Technical: a vault releasing funds on a verified condition.','Simple: like a deposit held by a neutral lawyer until the keys are handed over. The buyer’s money stays put until the work passes the agreed test.'],
+['PAY-ON-MERGE (Fixed-price Code Fix)','Technical: payment conditional on CI passing and the maintainer merging.','Simple: you only pay if the fix is accepted into your project.'],
+['MAKE-OR-ROUTE (Dispatch Decision)','Technical: choosing house execution or a sealed-bid outside auction by expected contribution.','Simple: do the job ourselves when that earns more, hand it to a vetted outside agent when we are full.']
+].map((g,i,a)=>`<li class="flex flex-col space-y-2 ${i<a.length-1?'border-b border-white/10 pb-4':''}"><span class="text-white font-bold text-base">${g[0]}</span><span class="text-zinc-500 text-xs italic">${g[1]}</span><span class="text-zinc-300 leading-relaxed">${g[2].replace('Simple:','<strong>Simple:</strong>')}</span></li>`).join('')}</ul>
+${callout('The conclusion','Foreguild finds the buyer. Foreguild delivers the work. The market governs the guild.','An agency-first model: acquire demand directly, take responsibility for delivery, verify against buyer-approved conditions and use futarchy as a disciplined decision instrument. All modelled figures are assumptions unless stated otherwise.')}
+`]);
+
+/* ---------- render ---------- */
+$('content').innerHTML=S.map(([id,title,head,body],i)=>`<article id="${id}" class="py-12 md:py-16 border-b border-white/10 space-y-8"><div class="space-y-4">${lab('// SECTION '+String(i+1).padStart(2,'0'))}<h2 class="${H2}">${title}</h2><p class="font-display text-lg sm:text-xl text-zinc-400 max-w-3xl leading-snug">${head}</p></div>${body}</article>`).join('');
+$('tocGrid').innerHTML=S.map(([id,title],i)=>`<a href="#${id}" class="border border-white/10 p-5 bg-zinc-950 hover:border-white/40 transition-colors group flex flex-col justify-between min-h-[120px] sm:min-h-[140px]"><div><span class="font-display text-3xl font-extrabold text-white/20 group-hover:text-white/40 transition-colors block mb-2">${String(i+1).padStart(2,'0')}</span><h3 class="font-display font-bold text-white uppercase tracking-wide text-sm group-hover:text-emerald-400 transition-colors">${title}</h3></div><div class="text-xs font-mono text-zinc-500 mt-4 flex justify-between items-center"><span>Read Section</span><i class="fa-solid fa-arrow-right"></i></div></a>`).join('');
+$('drawerNav').innerHTML='<a href="#toc" class="hover:text-white text-zinc-400">Table of Contents</a>'+S.map(([id,t],i)=>`<a href="#${id}" class="hover:text-white text-zinc-400">${String(i+1).padStart(2,'0')}. ${t}</a>`).join('');
+
+/* ---------- interactions ---------- */
+const drawer=$('mobileDrawer'),menuBtn=$('menuToggleBtn');
+menuBtn.addEventListener('click',()=>{drawer.classList.toggle('hidden');menuBtn.setAttribute('aria-expanded',!drawer.classList.contains('hidden'))});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{drawer.classList.add('hidden');menuBtn.setAttribute('aria-expanded','false')}));
+
+const modal=$('videoModal'),cv=$('audioCanvas'),ctx=cv.getContext('2d');let raf,playing=true;
+const fit=()=>{cv.width=cv.clientWidth;cv.height=cv.clientHeight};
+function draw(){if(!playing)return;ctx.clearRect(0,0,cv.width,cv.height);const n=cv.width<400?24:40,w=cv.width/n;ctx.fillStyle='rgba(255,255,255,.15)';for(let i=0;i<n;i++){const h=Math.random()*cv.height*.7;ctx.fillRect(i*w+2,cv.height-h,w-4,h)}raf=requestAnimationFrame(draw)}
+const setPlay=p=>{playing=p;$('playIconState').className=p?'fa-solid fa-pause text-lg':'fa-solid fa-play text-lg ml-1';$('togglePlayStateBtn').innerHTML=p?'<i class="fa-solid fa-pause"></i> PAUSE':'<i class="fa-solid fa-play"></i> PLAY';cancelAnimationFrame(raf);if(p)draw()};
+const closeVid=()=>{modal.classList.add('hidden');modal.classList.remove('flex');playing=false;cancelAnimationFrame(raf)};
+$('openVideoBtn')?.addEventListener('click',()=>{modal.classList.remove('hidden');modal.classList.add('flex');fit();setPlay(true);$('closeVideoBtn').focus()});
+$('closeVideoBtn').addEventListener('click',closeVid);
+modal.addEventListener('click',e=>{if(e.target===modal)closeVid()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVid()});
+$('togglePlayStateBtn').addEventListener('click',()=>setPlay(!playing));
+window.addEventListener('resize',fit);
+$('transcriptBtn')?.addEventListener('click',()=>alert('TRANSCRIPT LOG:\n00:00 - Scoper agrees the signed test on a $180 code task.\n00:45 - Buyer funds escrow; Dispatcher selects house execution.\n01:30 - Worker submits PR; Verifier runs CI.\n02:15 - Maintainer merges; refund window opens.\n03:10 - Day 10: no regression; funds count toward RNR.'));
+
+const items=document.querySelectorAll('.checklist-item'),score=$('readinessScore'),diag=$('diagnosticText'),total=items.length;
+function update(){const c=document.querySelectorAll('.checklist-item:checked').length;
+if(!c){score.textContent='DAY 0';score.className='text-red-400 font-bold text-base';diag.textContent='Select milestones to evaluate Day-90 survival.'}
+else if(c===total){score.textContent='GATE PASSED';score.className='text-emerald-400 font-bold text-base';diag.textContent='All exit tests met. Proceed to the next phase.'}
+else{score.textContent=`PROGRESS (${c}/${total})`;score.className='text-yellow-400 font-bold text-base';diag.textContent='Unmet exit tests by Day 90 trigger the kill / pivot rule.'}}
+items.forEach(i=>i.addEventListener('change',update));
+$('resetChecklistBtn').addEventListener('click',()=>{items.forEach(i=>i.checked=false);update()});
+
+function handleSubscribe(){const e=$('emailInput'),m=$('subscribeMsg');if(e.value){m.classList.remove('hidden');e.value='';setTimeout(()=>m.classList.add('hidden'),4000)}}
+</script>
+</body>
+</html>
